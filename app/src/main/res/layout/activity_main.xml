@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/red"
+        android:thumbTint="@android:color/holo_red_dark"
+        android:progressTint="@android:color/holo_red_dark"
+        android:min="0"
+        android:max="255"
+
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/green"
+        android:layout_below="@+id/red"
+        android:thumbTint="#06FD10"
+        android:progressTint="#06FD10"
+        android:min="0"
+        android:max="255"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blue"
+        android:layout_below="@+id/green"
+        android:thumbTint="#0C239C"
+        android:progressTint="#0C239C"
+        android:min="0"
+        android:max="255"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/textViewColor"
+        android:layout_below="@+id/blue"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#706D6D"
+        />
+
+</RelativeLayout>
